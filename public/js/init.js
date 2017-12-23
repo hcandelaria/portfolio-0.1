@@ -41,7 +41,9 @@
       });
     }
 
-
+		//collapsible
+		$('.collapsible').collapsible();
+		
 	  // Home
 	  $('.carousel:not(.carousel-slider)').carousel({
       dist: 0,
