@@ -1,0 +1,22 @@
+.contact{
+  margin-top: 40px;
+  opacity: .8;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+  color: #373d48;
+}
+/* label underline focus color */
+.input-field input:focus {
+  border-bottom: 1px solid #373d48;
+  box-shadow: 0 1px 0 0 #373d48;
+}
+
+.darkColor{
+  background-color: #373d48;
+}
+
+.contact:hover{
+  opacity: 1;
+}

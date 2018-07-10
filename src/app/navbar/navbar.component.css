@@ -1,0 +1,25 @@
+/*Logo font*/
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
+
+.brand-logo{
+  padding-top: 20px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 75px;
+  padding: 5px;
+  background-color: #373d48 !important;
+  border-radius: 100%;
+  border: 10px solid #373d48;
+}
+
+#nav-background{
+  position: absolute;
+  opacity: .2;
+  height: 93vh;
+  width: 100%;
+  z-index: -1;
+}
+
+#navBar {
+  background-color: #373d48 !important;
+  opacity: 1 !important;
+}
