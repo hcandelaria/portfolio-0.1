@@ -1,0 +1,10 @@
+<div class="col-md-6 col-md-offset-3" id="portfolio">
+  <div class="row">
+    <div class="col s12 m4" (click)="openDialog($event, project)" *ngFor='let project of projects'>
+      <mat-card>
+        <img  mat-card-image src={{project.img}} alt={{project.name}}>
+      </mat-card>
+      <br>
+    </div>
+  </div>
+</div>

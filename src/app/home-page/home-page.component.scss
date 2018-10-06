@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.welcome {
+  svg {
+	width: 50vw;
+	margin-left: 25%;
+  height: auto;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 4;
+	text-align: center;
+
+    tspan>tspan {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+      	stroke-dasharray: 1500;
+      	stroke-dashoffset: -1500;
+
+      @for $i from 1 through 7 {
+
+        &:nth-of-type(#{$i}) {
+          animation: draw 300ms #{$i * 150}ms forwards;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+.about-links {
+  div {
+	
+    a {
+			color: #000000;
+      margin: 0 2rem;
+      animation-name: fade-in;
+      animation-fill-mode: both;
+      animation-duration: 1s;
+			@for $i from 1 through 3 {
+				&:nth-of-type(#{$i}) {
+					animation-delay: #{$i}s;
+			}
+		}
+		mat-icon{
+			color: #373D48;
+			font-size: 5rem;
+		}
+    }
+  }
+}
+
+@keyframes draw {
+
+	100% {
+	  stroke-dashoffset: 0;
+	}
+  
+  }
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
