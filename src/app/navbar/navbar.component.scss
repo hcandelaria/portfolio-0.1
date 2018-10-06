@@ -1,0 +1,47 @@
+/*Logo font*/
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
+
+.drawerIcon{
+  margin: 1em;
+  color: #373D48;
+}
+.brand-logo{
+  font-family: 'Great Vibes', cursive;
+  color:#FFFFFF;
+  border: 10px solid #373D48;
+  background-color: #373D48;
+  font-size: 5rem;
+  border-radius: 100%;
+}
+
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+#content {
+  img {
+  opacity: .2;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  z-index: -1;
+  }
+}
+div{
+  .container.center-align{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+  }
+}

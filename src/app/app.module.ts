@@ -1,48 +1,65 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { ResumeComponent } from './resume/resume.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { ModalComponent } from './modal/modal.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { RouterModule, Routes } from '@angular/router';
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatDialogModule,
+  MatCardModule 
+} from '@angular/material';
 
-import { ModalService } from './_services';
-import { AboutComponent } from './about/about.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
+import { ProjectDialogComponent } from './project-dialog/project-dialog.component';
+import { FooterComponent } from './footer/footer.component';
+import { SkillsPageComponent } from './skills-page/skills-page.component';
 
 const appRoutes: Routes = [
-  { path: '',            component: HomeComponent},
-  { path: 'about',       component: AboutComponent},
-  { path: 'portfolio',   component: PortfolioComponent},
-  { path: 'resume',      component: ResumeComponent},
-  { path: 'contact',     component: ContactComponent},
-  { path: 'test',        component: ModalComponent},
+  { path: '',       component: HomePageComponent },
+  { path: 'about',  component: AboutPageComponent },
+  { path: 'skills',  component: SkillsPageComponent },
+  { path: 'portfolio',  component: PortfolioPageComponent },
+  { path: 'resume', component: ResumePageComponent },
 ];
-
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
-    ResumeComponent,
-    PortfolioComponent,
-    ContactComponent,
-    ModalComponent,
-    AboutComponent
+    HomePageComponent,
+    ResumePageComponent,
+    AboutPageComponent,
+    PortfolioPageComponent,
+    ProjectDialogComponent,
+    FooterComponent,
+    SkillsPageComponent
+  ],
+  entryComponents: [
+    ProjectDialogComponent,
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: false }
-    ),
-    BrowserModule
+    RouterModule.forRoot(appRoutes),
+    BrowserModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatDialogModule,
+    MatCardModule,
   ],
-  providers: [
-      ModalService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

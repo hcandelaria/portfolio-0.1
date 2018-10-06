@@ -1,0 +1,27 @@
+<div id="projects" class="col l4 m6 s12 gallery-item gallery-expand gallery-filter projects">
+  <div class="gallery-curve-wrapper center-align">
+    <div class="gallery-cover gray container">
+      <img class="responsive-img" src={{data.img}} alt={{data.name}}>
+    </div>
+    <div class="gallery-body">
+      <div class="title-wrapper">
+        <h3><b>
+            {{data.name}}
+          </b></h3>
+      </div>
+      <br>
+      <p class="description left-align">
+        {{data.description}}
+      </p>
+      <br>
+      <div class="categories container">
+          <a href={{data.links[0]}} target="_black"><button mat-raised-button color="primary">DEMO</button></a>
+          <a href={{data.links[1]}} target="_black"><button mat-raised-button color="primary">GitHub</button></a>
+          
+      </div>
+      <br>
+    </div>
+    <div class="gallery-action">
+    </div>
+  </div>
+</div>

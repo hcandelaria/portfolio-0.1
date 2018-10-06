@@ -1,8 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
 
-/*Text font*/
-@import url('https://fonts.googleapis.com/css?family=Arimo');
-
-body, p, a{
-  font-family: "Arimo";
-}
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
